@@ -1,10 +1,13 @@
+Exp: 09
+
+Date:08.11.2022
 
 # Experiment--09-Implementation-of Shift-registers-using-verilog-
-# AIM: 
+## AIM: 
 To implement PISO , PIPO,PISO  using verilog and validating their functionality using their functional tables
 ## HARDWARE REQUIRED:  – PC, Cyclone II , USB flasher
 ## SOFTWARE REQUIRED:   Quartus prime
-# THEORY 
+## THEORY 
 Shift registers are basically of 4 types. These are:
 
 Serial In Serial Out shift register
@@ -41,7 +44,7 @@ The logic circuit given below shows a parallel-in-parallel-out shift register. T
 FIGURE-04
 A Parallel in Parallel out (PIPO) shift register is used as a temporary storage device and like SISO Shift register it acts as a delay element.
 
-# Procedure
+## Procedure
 Step 1: Create a new file in quartus II.
 
 Step 2: Module Declaration. Module should have the file name.
@@ -54,7 +57,7 @@ Step 5: At the end give endmodule.
 
 Step 6: Run the program and choose RTL viewer to get RTL realization.
 
-# PROGRAM 
+## PROGRAM 
 ```
 /*
 Program for  Implementation-of Shift-registers-using-verilog-
@@ -62,7 +65,7 @@ Developed by: Kaushika A
 RegisterNumber:  212221230048
 */
 ```
-### PISO
+## PISO
 ```verilog
 module piso(Clk, Parallel_In,load, Serial_Out);
 input Clk,load;
@@ -81,7 +84,7 @@ end
 end
 endmodule
 ```
-### PIPO
+## PIPO
 ```verilog
 module pipo(PI,Clk,PO);
 input Clk;
@@ -93,7 +96,7 @@ PO=PI;
 end 
 endmodule 
 ```
-### SIPO
+## SIPO
 ```verilog
 module sipo(SI,Clk,Po);
 input SI,Clk;
@@ -128,5 +131,5 @@ endmodule
 ### SIPO
 ![](6.png)
 
-# RESULTS 
+# RESULT
 PISO , PIPO,PISO has been implemented using verilog and validated their functionality using their functional tables.
